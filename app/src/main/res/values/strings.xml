@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Kotlin_1_1</string>
+    <string name="button_text">Волшебная кнопка</string>
+    <string name="message_text">Волшебство свершилось!</string>
 </resources>
