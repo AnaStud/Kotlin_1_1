@@ -19,5 +19,9 @@ class MainActivity : AppCompatActivity() {
         val textWeather = findViewById<TextView>(R.id.text_view_weather)
         textWeather.text = Weather("Москва", -5).toString()
 
+        val city1 = Weather("Уфа", -1)
+        val city2 = city1.copy()
+        textWeather.text = textWeather.text as String + "\n" + city2.toString()
+
     }
 }
