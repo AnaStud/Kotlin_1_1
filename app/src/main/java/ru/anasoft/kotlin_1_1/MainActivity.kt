@@ -3,6 +3,7 @@ package ru.anasoft.kotlin_1_1
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -14,5 +15,9 @@ class MainActivity : AppCompatActivity() {
         buttonOk.setOnClickListener {
             Toast.makeText(this, getString(R.string.message_text), Toast.LENGTH_LONG).show()
         }
+
+        val textWeather = findViewById<TextView>(R.id.text_view_weather)
+        textWeather.text = Weather("Москва", -5).toString()
+
     }
 }

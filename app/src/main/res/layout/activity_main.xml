@@ -5,10 +5,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Space
+    <TextView
+        android:id="@+id/text_view_weather"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_weather"/>
 
     <Button
         android:id="@+id/button_ok"
